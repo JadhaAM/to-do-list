@@ -10,14 +10,15 @@ button.addEventListener("click", () => {
    //  if (event.key=="click") {
 
    //    addtodo(item.value);
-   //   item.value="";
-
+   
    //  }
-
-
+   
+   
    //  }
    const listitem = document.createElement("li");
    listitem.innerHTML = item.value + '<button> delete </button> ';
+   
+   item.value="";
    listitem.querySelector("button").addEventListener(
       'click',
       function () {
